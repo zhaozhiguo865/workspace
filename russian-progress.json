@@ -1,0 +1,77 @@
+{
+  "totalVocabulary": 100,
+  "weeklyNewWords": 50,
+  "targetWeeklyWords": 50,
+  "completionRate": 100,
+  "currentWeek": "2026-W29",
+  "weekStartDate": "2026-07-15",
+  "weekEndDate": "2026-07-19",
+  "weeklyThemes": [
+    {
+      "date": "2026-07-15",
+      "theme": "食物与饮料",
+      "words": 10,
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-16",
+      "theme": "购物与价格",
+      "words": 10,
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-17",
+      "theme": "交通出行",
+      "words": 10,
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-18",
+      "theme": "天气与季节",
+      "words": 10,
+      "status": "planned"
+    },
+    {
+      "date": "2026-07-19",
+      "theme": "情绪与感受",
+      "words": 10,
+      "status": "planned"
+    }
+  ],
+  "masteredWords": [
+    "привет", "здравствуйте", "спасибо", "пожалуйста", "да", "нет",
+    "я", "ты", "он", "она", "один", "два", "три", "четыре", "пять",
+    "время", "час", "минута", "сегодня", "завтра", "семья", "мама",
+    "папа", "брат", "сестра", "дом", "друг", "человек", "ребёнок",
+    "родители", "работа", "учёба", "отдых", "завтрак", "обед", "ужин",
+    "спать", "есть", "пить", "говорить", "цвет", "красный", "синий",
+    "белый", "чёрный", "большой", "маленький", "хороший", "новый", "красивый"
+  ],
+  "learningWords": [],
+  "nextWeekPlan": {
+    "week": "2026-W29",
+    "themes": [
+      { "date": "2026-07-15", "theme": "食物与饮料", "words": 10 },
+      { "date": "2026-07-16", "theme": "购物与价格", "words": 10 },
+      { "date": "2026-07-17", "theme": "交通出行", "words": 10 },
+      { "date": "2026-07-18", "theme": "天气与季节", "words": 10 },
+      { "date": "2026-07-19", "theme": "情绪与感受", "words": 10 }
+    ]
+  },
+  "history": [
+    {
+      "week": "2026-W25",
+      "newWords": 50,
+      "completionRate": 100,
+      "reviewFile": "russian-weekly-review-2026-W25.md"
+    },
+    {
+      "week": "2026-W28",
+      "newWords": 50,
+      "completionRate": 100,
+      "reviewFile": "russian-weekly-review-2026-W28.md",
+      "note": "复习周 - 完成50词复习测试，制定W29计划"
+    }
+  ],
+  "lastReviewDate": "2026-07-14"
+}

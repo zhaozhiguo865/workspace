@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯旅游宣传单 - 正面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        /* A4尺寸：210mm x 297mm，300dpi = 2480 x 3508px */
+        .flyer {
+            width: 2480px;
+            height: 3508px;
+            background: linear-gradient(180deg, #0a0e27 0%, #1a237e 50%, #0a0e27 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        /* 顶部条 */
+        .header-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 175px;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 120px;
+            border-bottom: 2px solid rgba(212,175,55,0.3);
+        }
+        
+        .logo {
+            font-size: 56px;
+            font-weight: 700;
+            color: #d4af37;
+            letter-spacing: 8px;
+        }
+        
+        .hotline {
+            font-size: 40px;
+            color: #ffffff;
+        }
+        
+        .hotline span {
+            color: #00d9a5;
+            font-weight: 700;
+        }
+        
+        /* 主视觉区域 */
+        .hero-section {
+            position: absolute;
+            top: 175px;
+            left: 0;
+            right: 0;
+            height: 1580px;
+            background: linear-gradient(180deg, 
+                rgba(26,35,126,0.8) 0%, 
+                rgba(10,14,39,0.9) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* 极光效果 */
+        .aurora {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2000px;
+            height: 800px;
+            background: linear-gradient(180deg, 
+                rgba(0,217,165,0.6) 0%, 
+                rgba(0,217,165,0.2) 50%,
+                transparent 100%);
+            filter: blur(60px);
+            border-radius: 50% 50% 0 0;
+        }
+        
+        .aurora::before {
+            content: '';
+            position: absolute;
+            top: 100px;
+            left: -200px;
+            width: 1200px;
+            height: 600px;
+            background: linear-gradient(180deg, 
+                rgba(0,217,165,0.4) 0%, 
+                transparent 100%);
+            filter: blur(40px);
+            border-radius: 50% 50% 0 0;
+            transform: rotate(-15deg);
+        }
+        
+        .aurora::after {
+            content: '';
+            position: absolute;
+            top: 150px;
+            right: -200px;
+            width: 1000px;
+            height: 500px;
+            background: linear-gradient(180deg, 
+                rgba(0,217,165,0.5) 0%, 
+                transparent 100%);
+            filter: blur(50px);
+            border-radius: 50% 50% 0 0;
+            transform: rotate(10deg);
+        }
+        
+        /* 主图占位 */
+        .hero-image {
+            width: 2000px;
+            height: 1200px;
+            background: linear-gradient(135deg, 
+                rgba(0,217,165,0.1) 0%, 
+                rgba(26,35,126,0.3) 100%);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid rgba(212,175,55,0.3);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .hero-image-text {
+            font-size: 80px;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 40px;
+        }
+        
+        .hero-image-sub {
+            font-size: 48px;
+            color: rgba(255,255,255,0.3);
+        }
+        
+        /* 雪花装饰 */
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+        
+        .snowflake {
+            position: absolute;
+            color: rgba(255,255,255,0.6);
+            font-size: 24px;
+            animation: fall 10s linear infinite;
+        }
+        
+        @keyframes fall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(3600px) rotate(360deg); opacity: 0; }
+        }
+        
+        /* 标题区域 */
+        .title-section {
+            position: absolute;
+            top: 1850px;
+            left: 0;
+            right: 0;
+            height: 525px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .main-title {
+            font-family: "Noto Serif SC", serif;
+            font-size: 140px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 0 0 60px rgba(0,217,165,0.5);
+            margin-bottom: 40px;
+            letter-spacing: 20px;
+        }
+        
+        .sub-title {
+            font-size: 56px;
+            color: #d4af37;
+            letter-spacing: 12px;
+            margin-bottom: 60px;
+        }
+        
+        .cities {
+            font-size: 48px;
+            color: rgba(255,255,255,0.8);
+            letter-spacing: 8px;
+        }
+        
+        .cities span {
+            color: #00d9a5;
+        }
+        
+        /* 卖点卡片 */
+        .features-section {
+            position: absolute;
+            top: 2450px;
+            left: 0;
+            right: 0;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            padding: 0 200px;
+        }
+        
+        .feature-card {
+            width: 600px;
+            height: 500px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 2px solid rgba(255,255,255,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .feature-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #00d9a5, #1a237e);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-title {
+            font-size: 56px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .feature-desc {
+            font-size: 36px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+        
+        /* 价格区域 */
+        .price-section {
+            position: absolute;
+            bottom: 200px;
+            left: 0;
+            right: 0;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .price-box {
+            display: flex;
+            align-items: baseline;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .price-label {
+            font-size: 48px;
+            color: #d4af37;
+        }
+        
+        .price-current {
+            font-size: 120px;
+            font-weight: 700;
+            color: #e53935;
+            text-shadow: 0 0 30px rgba(229,57,53,0.5);
+        }
+        
+        .price-unit {
+            font-size: 48px;
+            color: #ffffff;
+        }
+        
+        .price-original {
+            font-size: 40px;
+            color: rgba(255,255,255,0.5);
+            text-decoration: line-through;
+        }
+        
+        .price-save {
+            font-size: 44px;
+            color: #00d9a5;
+            font-weight: 700;
+        }
+        
+        /* CTA按钮 */
+        .cta-button {
+            background: linear-gradient(135deg, #d4af37, #f5e6a3);
+            color: #0a0e27;
+            font-size: 52px;
+            font-weight: 700;
+            padding: 40px 120px;
+            border-radius: 80px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 40px rgba(212,175,55,0.4);
+            letter-spacing: 8px;
+        }
+        
+        /* 底部装饰 */
+        .footer-deco {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(212,175,55,0.3) 50%, 
+                transparent 100%);
+        }
+        
+        /* 打印提示 */
+        .print-tip {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 14px;
+            z-index: 1000;
+        }
+        
+        /* 缩放展示 */
+        @media screen and (max-width: 2600px) {
+            .flyer {
+                transform: scale(0.3);
+                transform-origin: top center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <!-- 顶部条 -->
+        <div class="header-bar">
+            <div class="logo">✦ 极光旅行</div>
+            <div class="hotline">咨询热线：<span>400-888-9999</span></div>
+        </div>
+        
+        <!-- 主视觉区域 -->
+        <div class="hero-section">
+            <div class="aurora"></div>
+            <div class="hero-image">
+                <div class="hero-image-text">📷 极光主图区域</div>
+                <div class="hero-image-sub">建议尺寸：2000×1200px<br>摩尔曼斯克极光实拍</div>
+            </div>
+        </div>
+        
+        <!-- 雪花装饰 -->
+        <div class="snowflakes">
+            <div class="snowflake" style="left:10%;animation-delay:0s">❄</div>
+            <div class="snowflake" style="left:20%;animation-delay:2s">❅</div>
+            <div class="snowflake" style="left:30%;animation-delay:4s">❄</div>
+            <div class="snowflake" style="left:40%;animation-delay:1s">❅</div>
+            <div class="snowflake" style="left:50%;animation-delay:3s">❄</div>
+            <div class="snowflake" style="left:60%;animation-delay:5s">❅</div>
+            <div class="snowflake" style="left:70%;animation-delay:2.5s">❄</div>
+            <div class="snowflake" style="left:80%;animation-delay:4.5s">❅</div>
+            <div class="snowflake" style="left:90%;animation-delay:1.5s">❄</div>
+        </div>
+        
+        <!-- 标题区域 -->
+        <div class="title-section">
+            <h1 class="main-title">极光下的俄罗斯</h1>
+            <p class="sub-title">一生必去的浪漫之旅</p>
+            <p class="cities"><span>莫斯科</span> · <span>圣彼得堡</span> · <span>摩尔曼斯克</span></p>
+        </div>
+        
+        <!-- 卖点卡片 -->
+        <div class="features-section">
+            <div class="feature-card">
+                <div class="feature-icon">🛂</div>
+                <h3 class="feature-title">免签出行</h3>
+                <p class="feature-desc">跟团免签<br>说走就走</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background:linear-gradient(135deg, #00d9a5, #00b894)">🌌</div>
+                <h3 class="feature-title">极光 guaranteed</h3>
+                <p class="feature-desc">180天极光季<br>北极圈最大城市</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background:linear-gradient(135deg, #e53935, #c62828)">🏛️</div>
+                <h3 class="feature-title">双城文化游</h3>
+                <p class="feature-desc">莫斯科+圣彼得堡<br>7大经典景点</p>
+            </div>
+        </div>
+        
+        <!-- 价格区域 -->
+        <div class="price-section">
+            <div class="price-box">
+                <span class="price-label">早鸟价</span>
+                <span class="price-current">¥8,999</span>
+                <span class="price-unit">/人起</span>
+                <span class="price-original">原价¥12,999</span>
+                <span class="price-save">立省¥4,000</span>
+            </div>
+            <button class="cta-button">扫码咨询，领取详细行程</button>
+        </div>
+        
+        <!-- 底部装饰 -->
+        <div class="footer-deco"></div>
+    </div>
+    
+    <div class="print-tip">
+        按 Ctrl+P 打印，选择「另存为PDF」，纸张选A4，边距选「无」
+    </div>
+</body>
+</html>

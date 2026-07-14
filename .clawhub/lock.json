@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "explain-code": {
+      "version": "1.0.0",
+      "installedAt": 1776388157166
+    },
+    "text-adventure-game-skill": {
+      "version": "1.0.0",
+      "installedAt": 1776388200291
+    },
+    "skill-lookup-tool": {
+      "version": "1.0.0",
+      "installedAt": 1777167113859
+    },
+    "skill-sharpener": {
+      "version": "1.0.0",
+      "installedAt": 1777167241849
+    },
+    "language-learning": {
+      "version": "1.0.0",
+      "installedAt": 1777167415006
+    },
+    "voice-translator": {
+      "version": "1.0.0",
+      "installedAt": 1777168179519
+    },
+    "macos-local-voice": {
+      "version": "1.0.0",
+      "installedAt": 1777169917207
+    }
+  }
+}

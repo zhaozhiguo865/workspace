@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:03,000
+<font face="Alibaba PuHuiTi Heavy" size="80" color="#FFFFFF" stroke="#000000" stroke-width="4">别再喝难喝的咖啡了</font>
+
+2
+00:00:03,000 --> 00:00:08,000
+<font face="Alibaba PuHuiTi Heavy" size="72" color="#FFFFFF" stroke="#FF6B35" stroke-width="3">3分钟，手冲级咖啡</font>
+
+3
+00:00:08,000 --> 00:00:12,000
+<font face="Alibaba PuHuiTi Heavy" size="60" color="#FFD700">① 加水</font>
+
+4
+00:00:12,000 --> 00:00:16,000
+<font face="Alibaba PuHuiTi Heavy" size="60" color="#FFD700">② 放粉</font>
+
+5
+00:00:16,000 --> 00:00:20,000
+<font face="Alibaba PuHuiTi Heavy" size="60" color="#FFD700">③ 一键启动</font>
+
+6
+00:00:20,000 --> 00:00:35,000
+<font face="Alibaba PuHuiTi Heavy" size="70" color="#FFFFFF" stroke="#FFD700" stroke-width="3">油脂丰富，香气扑鼻</font>
+
+7
+00:00:35,000 --> 00:00:50,000
+<font face="Alibaba PuHuiTi Heavy" size="65" color="#FFFFFF">随时随地，想喝就喝</font>
+
+8
+00:00:50,000 --> 00:00:55,000
+<font face="Alibaba PuHuiTi Heavy" size="80" color="#FF4500">每天省下30块</font>
+
+9
+00:00:55,000 --> 00:01:00,000
+<font face="Alibaba PuHuiTi Heavy" size="70" color="#FFD700" background="#FF0000">点击左下角，限时优惠</font>

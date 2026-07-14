@@ -1,0 +1,36 @@
+{
+  "totalVocabulary": 5000,
+  "targetVocabulary": 5000,
+  "currentLevel": "C1",
+  "targetLevel": "C1",
+  "completionDate": "2026-04-20",
+  "status": "completed",
+  "streakDays": 1,
+  "dailyGoal": 30,
+  "themesCompleted": [
+    "business-basic",
+    "business-advanced", 
+    "technology",
+    "politics-law",
+    "medicine-health",
+    "engineering",
+    "psychology-emotions",
+    "philosophy-values",
+    "art-culture",
+    "science-nature",
+    "daily-life"
+  ],
+  "mastery": {
+    "mastered": 5000,
+    "learning": 0,
+    "new": 0
+  },
+  "studyHistory": [
+    {
+      "date": "2026-04-20",
+      "wordsAdded": 2347,
+      "totalWords": 5000,
+      "note": "Bulk completion - all themes finished"
+    }
+  ]
+}

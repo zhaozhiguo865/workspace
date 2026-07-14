@@ -1,0 +1,26 @@
+{
+  "russian": {
+    "total_vocabulary": 3153,
+    "last_review": "2026-07-06",
+    "review_streak": 36,
+    "next_review": "2026-08-05",
+    "weak_points": [
+      "动词体 (вид глагола)",
+      "带前缀运动动词"
+    ],
+    "mastered": [
+      "基础问候",
+      "数字 1-50",
+      "星期表达"
+    ]
+  },
+  "learning_history": [
+    {
+      "date": "2026-04-23",
+      "topic": "动词体复习",
+      "duration_minutes": 15,
+      "notes": "完成体 vs 未完成体基本规则"
+    }
+  ],
+  "last_updated": "2026-07-06"
+}

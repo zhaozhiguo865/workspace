@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "created": "2026-03-26",
+  "capabilities": {
+    "long_term_memory": {
+      "enabled": true,
+      "storage": "filesystem",
+      "files": ["MEMORY.md", "memory/*.md"],
+      "auto_extract": false,
+      "categories": ["preferences", "habits", "goals", "people", "projects"]
+    },
+    "voice_wakeup": {
+      "enabled": false,
+      "wake_words": ["龙虾", "OpenClaw", "贾维斯"],
+      "platform": "pending_research"
+    },
+    "jarvis_mode": {
+      "enabled": true,
+      "style": "professional_concise_proactive",
+      "features": {
+        "proactive_reminders": false,
+        "auto_summarize": false,
+        "predictive_suggestions": false
+      }
+    },
+    "persistence": {
+      "enabled": true,
+      "gateway_status": "running",
+      "auto_restart": false
+    },
+    "self_learning": {
+      "enabled": false,
+      "feedback_tracking": false,
+      "preference_adaptation": false
+    }
+  },
+  "user_model": {
+    "name": null,
+    "communication_style": null,
+    "preferred_response_length": null,
+    "interests": [],
+    "dislikes": [],
+    "common_tasks": []
+  }
+}
